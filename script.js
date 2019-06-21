@@ -30,26 +30,31 @@ function compChoice()
 function usChoice() 
 	{
 		rock.addEventListener("click", () => {
-            userChoice = "rock";
-		    alert("you chose rock");
-            console.log(userChoice);
-            //return "rock";
+//             userChoice = "rock";
+			alert("you chose rock");
+//             console.log(userChoice);
+//		return "rock";
+			alert(compare("rock", compChoice()));
+			
 
     	});
 
 	    paper.addEventListener("click", () => {
 
-	        userChoice = "paper";
+// 	        userChoice = "paper";
             alert("you chose paper");
-            console.log(userChoice);
+//             console.log(userChoice);
             //return "paper";
+		    alert(compare("paper", compChoice()));
+		    
 	    });
 
 	    scissors.addEventListener("click", () => {
-	        userChoice = "scissors";
+// 	        userChoice = "scissors";
             alert("you chose scissors");
-            console.log(userChoice);
+//             console.log(userChoice);
             //return "scissors";
+		    alert(compare("scissors", compChoice()));
 	    });
 	}
 
@@ -83,6 +88,7 @@ function compare(choice1, choice2)
                 return "scissors wins";
             }       
         }
+    }
         if(choice1 === "scissors") 
         {
             if(choice2 === "rock") 
@@ -97,14 +103,13 @@ function compare(choice1, choice2)
                 }
             }
         }
-    }
 };
 
 
 //userChoice = usChoice();
 usChoice();
-if(userChoice !== undefined)
-{
-    computerChoice = compChoice();
-    alert(compare(userChoice, computerChoice));
-}
+// if(userChoice !== undefined)
+// {
+//     computerChoice = compChoice();
+//     alert(compare(userChoice, computerChoice));
+// }
