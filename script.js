@@ -95,4 +95,5 @@ function compare(choice1, choice2)
         }
 };
 
-usChoice();
+
+    usChoice();
