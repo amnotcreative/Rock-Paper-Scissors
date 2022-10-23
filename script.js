@@ -3,6 +3,8 @@ var paper = document.querySelector("#paper");
 var scissors = document.querySelector("#scissors");
 var lizard = document.querySelector("#lizard");
 var spock = document.querySelector("#spock");
+var count1 = document.querySelector('#count1');
+var count2 = document.querySelector('#count2');
 var userChoice;
 var computerChoice;
 
@@ -82,10 +84,12 @@ function compare(choice1, choice2)
     {
         if(choice2 === "scissors" || choice2 === "lizard")
         {
+            count1.innerHTML=++count1.innerHTML;
             return "you win";
         } 
         else 
         {
+            count2.innerHTML=++count2.innerHTML;
             return "computer wins";
         }
     }
@@ -94,10 +98,12 @@ function compare(choice1, choice2)
     {
         if(choice2 === "rock" || choice2 === "spock") 
         {
+            count1.innerHTML=++count1.innerHTML;
             return "you win";
         } 
         else 
         {
+            count2.innerHTML=++count2.innerHTML;
                 return "computer wins";       
         }
     }
@@ -106,11 +112,13 @@ function compare(choice1, choice2)
         {
             if(choice2 === "paper" || choice2 === "lizard") 
             {
+                count1.innerHTML=++count1.innerHTML;
                 return "you win";
             } 
             else 
             {
-                    return "computer wins";
+                count2.innerHTML=++count2.innerHTML;
+                return "computer wins";
             }
         }
 
@@ -118,11 +126,13 @@ function compare(choice1, choice2)
         {
             if(choice2 === "paper" || choice2 === "spock") 
             {
+                count1.innerHTML=++count1.innerHTML;
                 return "you win";
             } 
             else 
             {
-                    return "computer wins";
+                count2.innerHTML=++count2.innerHTML;
+                return "computer wins";
             }
         }
 
@@ -130,10 +140,12 @@ function compare(choice1, choice2)
         {
             if(choice2 === "scissors" || choice2 === "rock") 
             {
+                count1.innerHTML=++count1.innerHTML;
                 return "you win";
             } 
             else 
             {
+                count2.innerHTML=++count2.innerHTML;
                     return "computer wins";
             }
         }
